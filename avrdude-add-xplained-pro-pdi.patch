@@ -1,0 +1,17 @@
+--- avrdude.conf.old	2020-09-19 12:55:13.044788435 -0500
++++ avrdude.conf	2020-09-19 12:56:19.289051139 -0500
+@@ -1110,6 +1110,14 @@
+ ;
+ 
+ programmer
++  id    = "xplainedpro_pdi";
++  desc  = "Atmel AVR XplainedPro in JTAG mode (PDI)";
++  type  = "jtagice3_pdi";
++  connection_type = usb;
++  usbpid = 0x2111;
++;
++
++programmer
+   id    = "xplainedpro_updi";
+   desc  = "Atmel AVR XplainedPro in UPDI mode";
+   type  = "jtagice3_updi";
